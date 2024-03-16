@@ -1,0 +1,48 @@
+<%- include('../partials/navbar'); %>
+
+<div id='product-details' class="container">
+
+    <div id="product-details-title" class="container text-center">
+        <h2 id="product-details-name"> <%= product.name %> </h2>
+        <p id="product-details-id"> Product id: <%= product['_id'] %> </p>
+    </div>
+
+    <form id="product-details-form" action='/<%= product['_id'] %>?_method=DELETE' method="POST">
+        <div class="form-group">
+          <label for="name-details">Name:</label>
+          <input type="text" class="form-control" name="name" id="name-details" placeholder="Enter a name" value="<%= product.name %>" disabled>
+        </div>
+        <div class="form-group">
+            <label for="price-value">Price:</label>
+            <input type="number" class="form-control" name="price" id="price-details" placeholder="Enter a price" value="<%= product.price %>" disabled>
+          </div>
+        <div class="form-group">
+          <label for="categories-list">Category:</label>
+          <select class="form-control" name="category" id="categories-list-details" disabled>
+            <% if(product.category === 'fruit') { %>
+                <option selected>Fruit</option>
+                <option>Vegetable</option>
+                <option>Dairy</option>
+            <% } else if (product.category === 'vegetable') { %>
+                <option>Fruit</option>
+                <option selected>Vegetable</option>
+                <option>Dairy</option>
+            <% } else { %>
+                <option>Fruit</option>
+                <option>Vegetable</option>
+                <option selected>Dairy</option>
+            <% } %>
+
+            </option>
+          </select>
+          <div id="details-buttons" class="container text-center mt-5">
+            <a id="edit-product-button" href="/<%= product['_id']%>/edit" class="btn btn-md me-1" role="button">Edit product</a>
+            <a href="/" class="btn btn-md cancel-goback me-1" role="button">Go back</a>
+            <button id="delete-button" type="submit" class="btn btn-md">Delete</button>
+          </div>
+        </div>   
+      </form>
+
+</div>
+
+<%- include('../partials/footer'); %>

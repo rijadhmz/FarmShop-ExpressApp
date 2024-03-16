@@ -1,0 +1,52 @@
+<%- include('../partials/navbar'); %>
+
+<div id='products-showcase' class="container">
+    <div class="container text-center">
+        <div id="categories" class="row">
+            <div id="fruits-cat" class="col category">
+                <i class="fa-solid fa-apple-whole fa-xl" style="color: #d5361e;"></i>
+                <p class="cat-name">Fruits</p>
+                <div id="fruits-list" class="container text-start">
+                    <ul>
+                        <% for (i of fruit) { %>
+                            <li>
+                                <a href="/<%= i['_id']%>/details" class="product"> <%= i.name %> - $<%= i.price %> </a>
+                            </li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+            <div id="vegetables-cat" class="col category">
+                <i class="fa-solid fa-carrot fa-xl" style="color: #dc6c14;"></i>
+                <p class="cat-name">Vegetables</p>
+                <div id="vegetables-list" class="container text-start">
+                    <ul>
+                        <% for (i of vegetable) { %>
+                            <li>
+                                <a href="/<%= i['_id']%>/details" class="product"> <%= i.name %> - $<%= i.price %> </a>
+                            </li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+            <div id="dairy-cat" class="col category">
+                <i class="fa-solid fa-cow fa-xl" style="color: #e3e2e2;"></i>
+                <p class="cat-name">Dairy</p>
+                <div id="dairy-list" class="container text-start">
+                    <ul>
+                        <% for (i of dairy) { %>
+                            <li>
+                                <a href="/<%= i['_id']%>/details" class="product"> <%= i.name %> - $<%= i.price %> </a>
+                            </li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-5">
+        <a id="new-product-button" href="/new" class="btn btn-md" role="button">Add new Product</a>
+    </div>
+</div>
+
+<%- include('../partials/footer'); %>

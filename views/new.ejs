@@ -1,0 +1,35 @@
+<%- include('../partials/navbar'); %>
+
+<div id='product-new' class="container">
+
+    <div id="product-new-title" class="container text-center">
+        <h2 id="product-new-name">New product:</h2>
+    </div>
+
+    <form id="product-new-form" action='/' method="POST">
+        <div class="form-group">
+          <label for="name-new">Name:</label>
+          <input type="text" class="form-control" name="name" id="name-new" placeholder="Enter a name" required>
+        </div>
+        <div class="form-group">
+            <label for="price-value">Price:</label>
+            <input type="number" class="form-control" name="price" id="price-new" placeholder="Enter a price" step="any" required>
+          </div>
+        <div class="form-group">
+          <label for="categories-list">Category:</label>
+          <select class="form-control" name="category" id="categories-list-new" required>
+            <option value='' selected disabled>-- Select a category --</option>
+            <option>Fruit</option>
+            <option>Vegetable</option>
+            <option>Dairy</option>
+          </select>
+          <div class="container text-center mt-5">
+            <button id="new-button" type="submit" class="btn btn-md me-1">Save</button>
+            <a href="/" class="btn btn-md cancel-goback" role="button">Cancel</a>
+          </div>
+        </div>   
+      </form>
+
+</div>
+
+<%- include('../partials/footer'); %>

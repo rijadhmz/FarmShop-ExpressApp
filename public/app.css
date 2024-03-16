@@ -1,0 +1,309 @@
+html, body {
+    background-color: #dbcbbc !important;
+}
+
+nav {
+    position: fixed;
+    background-color: #471f1f;
+}
+
+#space {
+    margin-top: 5rem;
+}
+
+.navbar a {
+    color: #dbcbbc;
+    font-size: 1.3rem;
+}
+
+.navbar a:hover {
+    color: #e3e2e2;
+}
+
+
+/* Products */
+
+#products-showcase {
+    margin-top: 3rem;
+    background-color: #471f1f;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    min-height: 80vh;
+    max-height: 80%;
+    max-width: 60%;
+    margin-bottom: 1rem;
+    
+}
+
+#categories {
+    min-height: 60vh;
+}
+
+#categories p {
+    padding-top: 0.5rem;
+    color: #dbcbbc;
+}
+
+
+.category {
+    border-left: 1px solid #6f4a4a;
+}
+
+.cat-name {
+    border-bottom: 1px solid #6f4a4a;;
+    padding-bottom: 0.5rem;
+}
+
+#fruits-cat {
+    border-left: none;
+}
+
+ul {
+    color: #dbcbbc;
+}
+
+
+#fruits-list li {
+    color: #d5361e;
+}
+
+#vegetables-list li {
+    color: #dc6c14;
+}
+
+#dairy-list li {
+    color: #e3e2e2;
+}
+
+.product {
+    text-decoration: none;
+    color: #dbcbbc;
+}
+
+.product:hover {
+    color: #e3e2e2
+}
+
+li {
+    padding-top: 0.5rem;
+}
+
+#new-product-button {
+    margin-top: 1rem;
+    background-color: #cbbcaf;
+    color: #471f1f;
+    font-weight: 500;
+}
+
+#new-product-button:hover {
+    background-color: #ac9f94;
+}
+
+
+/* Details */
+
+#product-details {
+    margin-top: 3rem;
+    background-color: #471f1f;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    min-height: 60vh;
+    max-height: 80%;
+    max-width: 60%
+}
+
+#product-details-name {
+    color: #dbcbbc;
+}
+#product-details-id {
+    color: #686059;
+}
+
+#product-details-form {
+    max-width: 60%;
+    min-width: 60%;
+    margin: 5% auto;
+}
+
+.form-group {
+    padding-top: 1rem;
+}
+
+.form-group label {
+    color: #dbcbbc;
+    padding-bottom: 1rem;
+}
+
+#edit-product-button {
+    background-color: #5f806f;
+    color: #e3e2e2;
+}
+
+#edit-product-button:hover {
+    background-color: #455d50;
+}
+
+
+#delete-button {
+    background-color: #d5361e;
+    color: #e3e2e2;
+}
+
+#delete-button:hover {
+    background-color: #ae2b16;
+    color: #e3e2e2;
+}
+
+#name-details, #price-details, #categories-list-details {
+    background-color: #6f4a4a;
+    color: #e3e2e2;
+    border: 1px solid #6f4a4a;
+}
+
+
+/* Edit */
+
+#product-edit {
+    margin-top: 3rem;
+    background-color: #471f1f;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    min-height: 60vh;
+    max-height: 80%;
+    max-width: 60%
+}
+
+#product-edit-name {
+    color: #dbcbbc;
+}
+#product-edit-id {
+    color: #686059;
+}
+
+#product-edit-form {
+    max-width: 60%;
+    min-width: 60%;
+    margin: 5% auto;
+}
+
+.form-group {
+    padding-top: 1rem;
+}
+
+.form-group label {
+    color: #dbcbbc;
+    padding-bottom: 1rem;
+}
+
+#edit-button {
+    background-color: #5F807F;
+    color: #e3e2e2;
+}
+
+#edit-button:hover {
+    background-color: #445b5a;
+}
+
+.cancel-goback {
+    background-color: #686059 !important;
+    color: #e3e2e2 !important;
+}
+
+.cancel-goback:hover {
+    background-color: #524b45 !important;
+    color: #e3e2e2 !important;
+}
+
+
+
+/* New */
+
+#product-new {
+    margin-top: 3rem;
+    background-color: #471f1f;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    min-height: 60vh;
+    max-height: 80%;
+    max-width: 60%
+}
+
+#product-new-name {
+    color: #dbcbbc;
+}
+#product-new-id {
+    color: #686059;
+}
+
+#product-new-form {
+    max-width: 60%;
+    min-width: 60%;
+    margin: 5% auto;
+}
+
+.form-group {
+    padding-top: 1rem;
+}
+
+.form-group label {
+    color: #dbcbbc;
+    padding-bottom: 1rem;
+}
+
+#new-button {
+    background-color: #5F807F;
+    color: #e3e2e2;
+}
+
+#new-button:hover {
+    background-color: #445b5a;
+}
+
+
+/* error 404 */
+
+#error-page {
+    margin-top: 3rem;
+    background-color: #471f1f;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    min-height: 60vh;
+    max-height: 80%;
+    max-width: 60%;
+    color: #e3e2e2;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#error-page a {
+    text-decoration: none;
+    color: #5e7da8;
+}
+
+#error-page a:hover {
+    text-decoration: none;
+    color: #475f80;
+}
+
+
+
+
+/* media query */
+
+
+@media screen and (max-width: 780px) {
+    .category {
+        border-left: none;
+    }
+
+    .btn {
+        margin-top: 0.5rem;
+    }
+  }
+
+@media screen and (max-width: 420px) {
+
+    .category li {
+        font-size: 0.8rem;
+    }
+}
